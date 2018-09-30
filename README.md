@@ -2,7 +2,7 @@
   前端规范 Front end specification
 所有有交互的加
 ```
-cursor：pointer
+cursor：pointer/text
 ```
 
 ## product 多环境配置推荐后台配置
@@ -96,7 +96,7 @@ export default {
 
 ## console.log调试完及时删掉
 
-编辑器
+## 编辑器/插件/快捷键
 
 ## git命令
 
