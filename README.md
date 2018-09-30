@@ -9,22 +9,25 @@
 ## ui库按需引入
 如果以后遇到想用iview里面某一个组件，但是又发现这个组件（本身封装的问题）不能完全满足我们需求，可以去de_modules/iview/dist/components/的组件复制粘贴到项目目录下 c/components/_iviewc/components/下，就可以直接改他的源码了，使用的时候记得要
 例如：
+```
 import Tabs from '@/components/_iview/components/tabs/index'
 
 components: {
     Tabs
 } 
+```
 
 ## html里面尽量不要写逻辑
 
 ## proxy服务器统一
+```
 /mock/xxx
 /local-weijia/xxx
 /local-aixuan/xxx
 /dev/xxx
 /test/xxx
 /product/xxx
-
+```
 ## axios 封装 fetch
 
 ## 全局拦截处理：
@@ -70,7 +73,7 @@ z-index层级
 ## 开发环境多端查看：
 
 ## 静态页面缓存处理：
-
+```
 export default {
   name字段
   methods: {
@@ -78,7 +81,7 @@ export default {
     handle // 处理时间33
     get // 获取数据
   }
-
+```
 ## destroyed的使用，例如营收分析页面图表自适应用到window.onresize要销毁
 
 ## mixins使用
@@ -101,18 +104,20 @@ export default {
 2.不支持slot
 3.data值或methods命名不能过长（30以内）
 4.ui放在static内，每个页面用到就在对应main.json里写：
+```
 	{
   		"usingComponents": {
     			"i-icon": "../../../../static/iview-weapp/dist/icon/index",
     			"i-message": "../../../../static/iview-weapp/dist/message/index"
   		}
 	}
+```
 5.app.json里面配置window：{导航条，标题，下拉刷新。。。}，networkTimeout：{配置超时时间}
 
 ==================================================================
 ## stylus-loader 难配置，无法使用~@引入静态资源
 
-sass：npm install node-sass sass-loader --save 直接下载就可以使用了
+sass：```npm install node-sass sass-loader --save``` 直接下载就可以使用了
 集成了redux/saga和css module，上手起来较快些
 
 
