@@ -1,6 +1,9 @@
 # Front-end-specification
   前端规范 Front end specification
-所有有交互的加cursor：pointer
+所有有交互的加
+```
+cursor：pointer
+```
 
 ## product 多环境配置推荐后台配置
 
@@ -117,7 +120,11 @@ export default {
 ==================================================================
 ## stylus-loader 难配置，无法使用~@引入静态资源
 
-sass：```npm install node-sass sass-loader --save``` 直接下载就可以使用了
+sass：
+```
+npm install node-sass sass-loader --save
+```
+直接下载就可以使用了
 集成了redux/saga和css module，上手起来较快些
 
 
@@ -132,6 +139,8 @@ sass：```npm install node-sass sass-loader --save``` 直接下载就可以使�
 
 ==================================================================
 ## yarn：
+```
 yarn global bin
 yarn config get registry
 yarn config set registry https://registry.npm.taobao.org
+```
